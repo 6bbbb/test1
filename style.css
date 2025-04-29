@@ -1,0 +1,274 @@
+body{
+    background-color: #555;
+}
+
+.cards{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.cards div{
+    background-color: #666;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #b3b3b3;
+    transition: .5s;
+}
+
+
+.cards div:hover{
+    background-color: #999;
+    transform: scale(1.1);
+}
+
+/* Softwares */
+.softwares {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 25px;
+    padding: 30px;
+    background-color: #032439;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    direction: rtl;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* كل بطاقة برنامج */
+  .softwares > div {
+    background-color: #010c62;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .softwares > div:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* صورة البرنامج */
+  .softwares img {
+    width: 100%;
+    height: 160px;
+    object-fit: contain;
+    background-color: #063959;
+    padding: 20px;
+    /* border-bottom: 1px solid #eaeaea; */
+  }
+  
+  /* العناوين */
+  .softwares h2 {
+    font-size: 16px;
+    margin: 8px 15px;
+    color: #d4d4d4;
+    font-weight: 600;
+  }
+  
+  /* المستوى - تمييز خاص */
+  .softwares h2:nth-of-type(2) {
+    color: #3498db;
+    font-size: 14px;
+    margin-top: 5px;
+  }
+  
+  /* رابط التحميل */
+  .softwares a {
+    display: block;
+    margin: 15px;
+    padding: 10px 0;
+    background-color: #3498db;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    text-align: center;
+    font-weight: 600;
+    transition: background-color 0.3s;
+    box-shadow: 0 4px 8px rgba(52, 152, 219, 0.3);
+  }
+  
+  .softwares a:hover {
+    background-color: #2980b9;
+  }
+  
+  /* وصف البرنامج */
+  .softwares p {
+    font-size: 14px;
+    color: #666;
+    margin: 5px 15px 15px;
+    line-height: 1.5;
+    flex-grow: 1;
+  }
+
+  /* Wadei CSS */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Cairo', sans-serif;
+    line-height: 1.7;
+    background-color: #ffffff;
+    
+    color: #333;
+    direction: rtl;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow-x: hidden;
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.navbar {
+    background: #2f4f4f;
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 27px;
+    direction: rtl;
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 8px 15px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-links li a:hover {
+    color: #ffbb33;
+    transform: scale(1.05);
+}
+
+.program-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    background-color: #ffffff;
+    margin-top: 130px;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: slideUp 1s forwards;
+    margin-bottom: 170px; /* زيادة المسافة هنا (من 100px إلى 150px) */
+}
+
+@keyframes slideUp {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+.program-info-text {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.program-info-text h3 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.program-info-text p {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+.program-buttons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.program-buttons .btn {
+    padding: 15px 30px;
+    background-color: rgba(47, 79, 79, 0.1);
+    color: #2f4f4f;
+    border: 2px solid #2f4f4f;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    text-align: center;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+}
+
+.program-buttons .btn:hover {
+    background-color: #2f4f4f;
+    color: #fff;
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.program-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.program-text {
+    width: 50%;
+    padding-right: 20px;
+}
+
+.program-image {
+    width: 40%;
+    perspective: 1000px;
+}
+
+.program-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    margin: 0;
+    transform: rotateY(15deg) rotateX(5deg);
+    transition: transform 0.5s ease;
+    box-shadow: 0 25px 40px rgba(0, 0, 0, 0.4), 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* .program-image img:hover {
+    transform: rotateY(0deg) rotateX(0deg) scale(1.05);
+} */
+
