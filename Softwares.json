@@ -38,5 +38,13 @@
         "AppIconLink": "https://i.pinimg.com/736x/45/fc/04/45fc047a4d037ea0e090b341a46ff4e9.jpg",
         "AppDescription": "\u062A\u0637\u0628\u064A\u0642 \u062A\u0648\u0627\u0635\u0644 \u0639\u0627\u0645 \u0641\u064A\u0647 \u0645\u064A\u0632\u0627\u062A \u0631\u0647\u064A\u0628\u0629.",
         "BtecLevel": "2"
+    },
+    {
+        "AppID": 6,
+        "AppName": "Brave Browser",
+        "AppDownloadLinke": "https://laptop-updates.brave.com/download/BRV010?bitness=64",
+        "AppIconLink": "https://i.pinimg.com/736x/da/16/57/da1657636981ca299bbc9ace54b95a03.jpg",
+        "AppDescription": "Block ads. Save data. And get way faster webpages. Just by switching your browser.",
+        "BtecLevel": "2"
     }
 ]
